@@ -1,4 +1,4 @@
-# require 'pry'
+require 'pry'
 #
 # holiday_hash =
 # {
@@ -25,6 +25,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
     holidays.each do |holiday, supplies|
       supplies << supply
     end
+    binding.pry
   end
 end
 

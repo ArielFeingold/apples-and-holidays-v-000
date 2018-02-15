@@ -33,6 +33,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
   holiday_hash[:spring][:memorial_day] << supply
+        binding.pry
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
@@ -55,7 +56,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{season.capitalize}:"
       if holiday.to_s.include?("_")
         puts "  #{holiday.to_s.tr("_", " ").capitalize}: #{supplies.join(", ")}"
-      binding.pry
       else
         name_array = holiday.to_s.split('_')
         puts "  #{name_array.collect{|w| w.capitalize}}: #{supplies.join(", ")}"

@@ -49,13 +49,13 @@ all_supply = []
     all_supply.join
 end
 
-def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, holiday_array|
-    puts "#{season.capitalize}:"
-    puts "  #{holiday_array}"
-  end
-  binding.pry
-end
+# def all_supplies_in_holidays(holiday_hash)
+#   holiday_hash.each do |season, holiday_array|
+#     puts "#{season.capitalize}:"
+#     puts "  #{holiday_array}"
+#   end
+#   binding.pry
+# end
 
 # puts "#{season.capitalize}:"
 # puts "  #{holiday_array}"

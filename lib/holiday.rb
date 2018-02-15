@@ -52,7 +52,7 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     if season == :winter
-      puts "winter"
+      puts "Winter"
     else puts "not winter"
     # puts "#{season.capitalize}:"
     # puts " #{holiday}:"

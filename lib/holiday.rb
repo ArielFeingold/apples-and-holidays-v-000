@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 #
 # holiday_hash =
 # {
@@ -81,6 +81,5 @@ def all_holidays_with_bbq(holiday_hash)
       end
       bbq_holidays
     end
-    binding.pry
   end
 end

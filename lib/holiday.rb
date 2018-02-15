@@ -79,8 +79,8 @@ def all_holidays_with_bbq(holiday_hash)
       if list.include?("BBQ")
         bbq_holidays << holiday_array.keys
       end
-        binding.pry
       bbq_holidays
     end
+    binding.pry
   end
 end

@@ -59,8 +59,8 @@ def all_supplies_in_holidays(holiday_hash)
         name_array = holiday.to_s.split('_')
         puts "  #{name_array.collect{|w| w.capitalize}}: #{supplies.join(", ")}"
       end
-      binding.pry
     end
+          binding.pry
   end
 end
 

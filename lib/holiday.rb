@@ -25,7 +25,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
     holidays.each do |holiday, supplies|
       supplies << supply
     end
-    binding.pry
   end
 end
 
@@ -81,5 +80,6 @@ def all_holidays_with_bbq(holiday_hash)
       end
       bbq_holidays
     end
+    binding.pry
   end
 end

@@ -50,12 +50,10 @@ all_supply = []
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, holiday|
-    if season == :winter
-      puts "Winter:"
-      puts "  #{holiday.keys.join}"
-    # puts "#{season.capitalize}:"
-    # puts " #{holiday}:"
+  holiday_hash.each do |season, holiday_array|
+    season.each do |holiday, supplies|
+    puts "#{season.capitalize}:"
+    puts " #{holiday}:"
   end
   end
 end

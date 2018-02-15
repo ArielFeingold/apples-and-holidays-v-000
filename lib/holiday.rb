@@ -48,7 +48,7 @@ all_supply = []
   end
     all_supply.join
 end
-
+binding.pry
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{holiday}:"
   end
 end
-binding.pry
+
 
 
 def all_holidays_with_bbq(holiday_hash)

@@ -53,9 +53,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     puts "#{season.capitalize}:"
     puts "#{holiday_string}:"
+    binding.pry
   end
 end
-binding.pry
+
 # iterate through holiday_hash and print items such that your readout resembles:
 # Winter:
 #   Christmas: Lights, Wreath

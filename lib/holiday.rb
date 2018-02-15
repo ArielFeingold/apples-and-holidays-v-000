@@ -1,4 +1,4 @@
-# # require 'pry'
+require 'pry'
 #
 # holiday_hash =
 # {
@@ -53,9 +53,15 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_array|
     puts "#{season.capitalize}:"
     puts "  #{holiday_array}"
-    # puts "#{holiday_array}"
+  end
+  binding.pry
+end
+
   end
 end
+# puts "#{season.capitalize}:"
+# puts "  #{holiday_array}"
+# puts "#{holiday_array}"
 
 # iterate through holiday_hash and print items such that your readout resembles:
 # Winter:
@@ -69,5 +75,10 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
+  bbq_holidays = []
+  holiday_hash.each do |season, holiday_array|
+    season.each do |holiday, list|
+      if list.include? "BBQ"
+
 
 end
